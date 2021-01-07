@@ -1,0 +1,38 @@
+<html>
+<body>
+<ul id="org" class="task-list"><li>
+	<div class="task-checkbox">
+		<input type="checkbox" class="list-child" value=""  />
+	</div>
+	<div class="task-title" >
+		<span class="task-title-sp"><input type="text" name="urls" value="http://www.sohu.com" /></span>
+		<span class="badge bg-theme">Done</span>
+		<div class="pull-right hidden-phone">
+			<button class="btn btn-danger btn-xs" οnclick="del(event)"><i class="fa fa-trash-o "></i></button>
+		</div>
+	</div>
+</li>  
+</ul>
+
+<script type="text/javascript">
+	function add1(){
+	var ul = document.getElementById("org");
+		var li = ul.firstChild.cloneNode(true);
+		ul.appendChild(li);
+	}
+	function del(event){
+		var obj = event.srcElement||event.target;
+		var li  = obj.parentNode;
+		var   gettype=Object.prototype.toString
+		while(gettype.call(li) != "[object HTMLLIElement]"){
+		li = li.parentNode;
+		}
+		var ul = document.getElementById("org");
+		if(li != ul.getElementsByTagName("li")[0]){
+		ul.removeChild(li);
+		}
+	 
+	}
+	</script>
+</body>
+</html>
