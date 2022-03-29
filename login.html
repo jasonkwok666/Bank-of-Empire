@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Empire| Online Banking Simplifed.</title>
-<!-- for-mobile-apps -->
+<title>Empire | Online Banking Simplifed.</title>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content=""/>
+<meta name="keywords" content="Bank Card Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
     <script>
         addEventListener("load", function () {
@@ -18,10 +19,13 @@
         }
     </script>
 
+
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
     <link href="css/style.css" rel='stylesheet' type='text/css' />
     <link href="css/font-awesome.min.css" rel="stylesheet">
-	
+
+	<script src="js/login.js"></script>
+
 	<link href="//fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
 
 
@@ -48,6 +52,7 @@
 	</div>
 </header>
 
+
 <section class="inner-banner" id="home">
 	<div class="inner-layer">
 		<div class="container">
@@ -62,7 +67,7 @@
 			<li class="breadcrumb-item">
 				<a href="index.html">Home</a>
 			</li>
-			<li class="breadcrumb-item" aria-current="page">Contact</li>
+			<li class="breadcrumb-item" aria-current="page">Log in</li>
 		</ol>
 	</nav>
 	</div>
@@ -70,25 +75,41 @@
 
 <section class="contact py-5">
 	<div class="container py-lg-5">
-		<h2 class="heading mb-sm-5 mb-4">Get in <strong> touch with us </strong></h2>
 		<div class="row">
-			<div class="col-lg-4 col-md-6 contact-address">
-				<h4 class="mb-4 w3f_title">Contact Address</h4>
-				<ul class="list-w3">
-					<li class="d-flex"><span class="fa mt-1 mr-1 fa-map-marker"></span>100 Almaden Blvd #100, <br>San Jose, CA 95113</li>
-					<li class="my-3"><span class="fa mr-1 fa-phone"></span>(408)-967-3886</li>
-					<li class=""><span class="fa mr-1 fa-envelope"></span><a href="BankOfSanJose@bosj.edu">Empire@bosj.edu</a></li>
-				</ul>
-			</div>
-			<div class="col-lg-4 contact-map mt-lg-0 mt-sm-5 mt-4">
-					<p>Please allow for 3 business days to respond to emails. Also be sure to include username
-						and any other relevant account information in the email.
-					</p>
-				</div>
-			<div class="col-lg-4 contact-map mt-lg-0 mt-sm-5 mt-4">
-				<h4 class="mb-4 w3f_title">Contact Map</h4>
-				<iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=100%20Almaden%20Blvd%20%23100%2C%20San%20Jose%2C%20CA%2095113+(Dank%20Bank)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" allowfullscreen=""></iframe>
-			</div>
+			<div class="col-md-2"></div>
+			<h2 class="heading mb-sm-5 mb-4 col-md-8">Log in your account</h2>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<span class="input-group-text"><i class="fa fa-user"></i></span>
+			<input type="username" class="form-control col-md-8" id="username" name="u" required="required" placeholder="Username"/>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row"><br/></div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<span class="input-group-text"><i class="fa fa-lock"></i></span>
+			<input type="password" class="form-control col-md-8" id="password" name="p" required="required" placeholder="Password"/>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row"><br/></div>
+		<div class="row">
+			<div class="col-md-5"></div>
+			<button type="submit" class="btn btn-primary col-md-2" onclick="onLogin();return false;">Submit</button>
+			<div class="col-md-5"></div>
+		</div>
+		<div class="row"><br/></div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<p id="error_text" class="col-md-8"></p>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row"><br/></div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<a href="Registration.html" class="col-md-4">Don't have an account? Register for one here.</a>
+			<div class="col-md-4"></div>
 		</div>
 	</div>
 </section>
@@ -109,7 +130,6 @@
 			<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
 		</a>
 	</div>
-
 
 </body>
 </html>

@@ -1,267 +1,131 @@
+
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
+<title>Empire | Online Banking Simplifed.</title>
 
-<!-- Basic Page Needs
-================================================== -->
-<meta charset="utf-8">
-<title>Chow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content=""/>
 
-<!-- Mobile Specific Metas
-================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-<!-- CSS
-================================================== -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/colors/green.css" id="colors">
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
 
-<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <link href="css/css_slider.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+	<link href="//fonts.googleapis.com/css?family=Niramit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet">
+
 
 </head>
-
 <body>
 
 
+<header>
+	<div class="container">
+		<!-- nav -->
+		<nav class="py-3 d-lg-flex">
+			<div id="logo">
+				<h1> <a href="index.html"><span class="fa fa-university"></span>Empire </a></h1>
+			</div>
+			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+			<input type="checkbox" id="drop" />
+			<ul class="menu ml-auto mt-1">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li class="active"><a href="login.html">Log in</a></li>
+				<li class="active"><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+	</div>
+</header>
 
 
-<!-- Content
-================================================== -->
-<div class="container">
+<div class="banner" id="home">
+	<div class="layer">
+		<div class="container">
+			<div class="banner-text-w3pvt">
 
-	<!-- Masonry -->
-	<div class="twelve columns">
-
-		<!-- Headline -->
- 		<h3 class="headline">Latest Recipes</h3>
-		<span class="line rb margin-bottom-35"></span>
-		<div class="clearfix"></div>
-
-		<!-- Isotope -->
-		<div class="isotope">
-
-			<!-- Recipe #1 -->
-			<div class="four recipe-box columns">
-
-				<!-- Thumbnail -->
-				<div class="thumbnail-holder">
-					<a href="recipe-page-1.html">
-						<img src="images/recipeThumb-01.jpg" alt=""/>
-						<div class="hover-cover"></div>
-						<div class="hover-icon">View Recipe</div>
-					</a>
+				<div class="csslider infinity" id="slider1">
+					<input type="radio" name="slides" checked="checked" id="slides_1" />
+					<input type="radio" name="slides" id="slides_2" />
+					<input type="radio" name="slides" id="slides_3" />
+					<ul class="banner_slide_bg">
+						<li>
+							<div class="w3ls_banner_txt">
+								<h2 class="b-w3ltxt text-capitalize mt-md-4"><span>Welcome</span> </h2>
+								<h4 class="b-w3ltxt text-capitalize">About us</h4>
+								<p class="w3ls_pvt-title my-3">Empire is an online American local investment bank
+									and financial services company based in San Jose, California. Empire was founded in 2019 by Ryan Hedgecock, Hamza Habibi, Alisha Mehndiratta,
+									 Gurvin Kohli, Jason Guo, Asad Khan, and Deon Labrador. At Empire a member who
+									signs up is given a checkings and savings account where they can electronically deposit checks, transfer funds
+									and withdraw cash. For any concerns or questions please feel free to contact us. Thank you.</p>
+							</div>
+						</li>
+					</ul>
 				</div>
 
-				<!-- Content -->
-				<div class="recipe-box-content">
-					<h3><a href="recipe-page-1.html">Mexican Grilled <br> Corn Recipe</a></h3>
-					
-					<div class="rating five-stars">
-						<div class="star-rating"></div>
-						<div class="star-bg"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="statistics py-5">
+	<div class="container py-lg-5 py-sm-3">
+		<h3 class="heading mb-sm-5 mb-4">Latest <strong>statistical information</strong></h3>
+		<div class="row">
+			<div class="col-lg-4 mb-lg-0 mb-5">
+				<p class="mb-4">We pride ourselves in ensuring the best experience possible for our users. The
+					statistics to the right show our progress in ensuring that happens.
+				</s></Thead></p>
+			</div>
+			<div class="col-lg-4 col-md-6 mb-lg-0 mb-4">
+				<img src="images/cartoonGraph.svg" alt="" class="img-fluid">
+			</div>
+			<div class="col-lg-4 col-md-6 mt-lg-0 mt-md-4">
+				<div class="progress-one">
+					<h4 class="progress-tittle">Online Banking</h4>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-
-					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 30 min</div>
-
-					<div class="clearfix"></div>
+				</div>
+				<div class="progress-one">
+					<h4 class="progress-tittle">24/7 support</h4>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
 
-			<!-- Recipe #2 -->
-			<div class="four recipe-box columns">
-
-				<!-- Thumbnail -->
-				<div class="thumbnail-holder">
-					<a href="recipe-page-2.html">
-						<img src="images/recipeThumb-02.jpg" alt=""/>
-						<div class="hover-cover"></div>
-						<div class="hover-icon">View Recipe</div>
-					</a>
-				</div>
-				
-				<!-- Content -->
-				<div class="recipe-box-content">
-					<h3><a href="recipe-page-2.html">Choclate Cake With Green Tea Cream</a></h3>
-					
-					<div class="rating four-stars">
-						<div class="star-rating"></div>
-						<div class="star-bg"></div>
-					</div>
-
-					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 1 hr 30 min</div>
-
-					<div class="clearfix"></div>
-				</div>
+<section class="copy-right py-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7">
+				<p class="">© 2019 Empire. All rights reserved
+				</p>
 			</div>
+		</div>
+	</div>
+</section>
 
-			<!-- Recipe #3 -->
-			<div class="four recipe-box columns">
-
-				<!-- Thumbnail -->
-				<div class="thumbnail-holder">
-					<a href="recipe-page-1.html">
-						<img src="images/recipeThumb-03.jpg" alt=""/>
-						<div class="hover-cover"></div>
-						<div class="hover-icon">View Recipe</div>
-					</a>
-				</div>
-				
-				<!-- Content -->
-				<div class="recipe-box-content">
-					<h3><a href="recipe-page-1.html">Thai Yellow Curry Chicken</a></h3>
-					
-					<div class="rating five-stars">
-						<div class="star-rating"></div>
-						<div class="star-bg"></div>
-					</div>
-
-					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 45 min</div>
-
-					<div class="clearfix"></div>
-				</div>
-			</div>
-
-			<!-- Recipe #4 -->
-			<div class="four recipe-box columns">
-
-				<!-- Thumbnail -->
-				<div class="thumbnail-holder">
-					<a href="recipe-page-2.html">
-						<img src="images/recipeThumb-04.jpg" alt=""/>
-						<div class="hover-cover"></div>
-						<div class="hover-icon">View Recipe</div>
-					</a>
-				</div>
-				
-				<!-- Content -->
-				<div class="recipe-box-content">
-					<h3><a href="recipe-page-2.html">Avocado Melon Salad With Lime Vinaigrette</a></h3>
-					
-					<div class="rating four-stars">
-						<div class="star-rating"></div>
-						<div class="star-bg"></div>
-					</div>
-
-					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 15 min</div>
-
-					<div class="clearfix"></div>
-				</div>
-			</div>
-
-			<!-- Recipe #5 -->
-			<div class="four recipe-box columns">
-
-				<!-- Thumbnail -->
-				<div class="thumbnail-holder">
-					<a href="recipe-page-1.html">
-						<img src="images/recipeThumb-05.jpg" alt=""/>
-						<div class="hover-cover"></div>
-						<div class="hover-icon">View Recipe</div>
-					</a>
-				</div>
-				
-				<!-- Content -->
-				<div class="recipe-box-content">
-					<h3><a href="recipe-page-1.html">Pollo Borracho With Homemade Tortillas</a></h3>
-					
-					<div class="rating four-stars">
-						<div class="star-rating"></div>
-						<div class="star-bg"></div>
-					</div>
-
-					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 30 min</div>
-
-					<div class="clearfix"></div>
-				</div>
-			</div>
-
-			<!-- Recipe #6 -->
-			<div class="four recipe-box columns">
-
-				<!-- Thumbnail -->
-				<div class="thumbnail-holder">
-					<a href="recipe-page-2.html">
-						<img src="images/recipeThumb-06.jpg" alt=""/>
-						<div class="hover-cover"></div>
-						<div class="hover-icon">View Recipe</div>
-					</a>
-				</div>
-				
-				<!-- Content -->
-				<div class="recipe-box-content">
-					<h3><a href="recipe-page-2.html">Sweet Chilli and Lime Chicken Wings</a></h3>
-					
-					<div class="rating five-stars">
-						<div class="star-rating"></div>
-						<div class="star-bg"></div>
-					</div>
-
-					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 45 min</div>
-
-					<div class="clearfix"></div>
-				</div>
-			</div>
-
-			<!-- Recipe #7 -->
-			<div class="four recipe-box columns">
-
-				<!-- Thumbnail -->
-				<div class="thumbnail-holder">
-					<a href="recipe-page-2.html">
-						<img src="images/recipeThumb-07.jpg" alt=""/>
-						<div class="hover-cover"></div>
-						<div class="hover-icon">View Recipe</div>
-					</a>
-				</div>
-				
-				<!-- Content -->
-				<div class="recipe-box-content">
-					<h3><a href="recipe-page-2.html">Roast Chicken With Lemon Gravy</a></h3>
-					
-					<div class="rating five-stars">
-						<div class="star-rating"></div>
-						<div class="star-bg"></div>
-					</div>
-
-					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 1 hr 20 min</div>
-
-					<div class="clearfix"></div>
-				</div>
-			</div>
-
-			<!-- Recipe #8 -->
-			<div class="four recipe-box columns">
-
-				<!-- Thumbnail -->
-				<div class="thumbnail-holder">
-					<a href="recipe-page-1.html">
-						<img src="images/recipeThumb-08.jpg" alt=""/>
-						<div class="hover-cover"></div>
-						<div class="hover-icon">View Recipe</div>
-					</a>
-				</div>
-				
-				<!-- Content -->
-				<div class="recipe-box-content">
-					<h3><a href="recipe-page-1.html">Farmhouse Vegetable And Barley Soup</a></h3>
-					
-					<div class="rating four-stars">
-						<div class="star-rating"></div>
-						<div class="star-bg"></div>
-					</div>
-
-					<div class="recipe-meta"><i class="fa fa-clock-o"></i> 1 hr 30 min</div>
-
-					<div class="clearfix"></div>
-				</div>
-			</div>
-
-			<!-- Recipe #9 -->
-			<div class="four recipe-box columns">
-
-
+<div class="move-top text-right">
+	<a href="#home" class="move-top">
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
 
 
 </body>
